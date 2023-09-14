@@ -1,13 +1,10 @@
 import './ExpenseItem.css';
-function ExpenseItem(){
-    const LocationOfExpenditure = "Delhi";
+function ExpenseItem(props){
     return(
         <div>
             <h1 className="color-blue">Expense Items</h1>
-            <div>Food Rs 10</div>
-            <div>Petrol Rs 100</div>
-            <div>Movies Rs 200</div>
-            <div>Location of expenditure is {LocationOfExpenditure}</div>
+            <div>{props.title} Rs {props.amount}</div>
+            <div>Location of expenditure is {props.locationForExpense}</div>
         </div>
     );
 }
