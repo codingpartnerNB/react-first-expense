@@ -4,20 +4,23 @@ import ExpenseItem from './components/ExpenseItem';
 function App() {
   const expenses = [{
     title:"Food",
-    amount:10
+    amount:10,
+    date:new Date()
   },{
     title:"Petrol",
-    amount:100
+    amount:100,
+    date:new Date()
   },{
     title:"Movies",
-    amount:200
+    amount:200,
+    date:new Date()
   }];
   const LocationOfExpenditure = "Delhi";
   return (
     <div>
       {
         expenses.map((item)=>{
-        return <ExpenseItem title={item.title} amount={item.amount} locationForExpense={LocationOfExpenditure}></ExpenseItem>
+        return <ExpenseItem title={item.title} amount={item.amount} date={item.date} locationForExpense={LocationOfExpenditure}></ExpenseItem>
         })
       }
     </div>

@@ -2,6 +2,12 @@
     background-color: cyan;
     color: white;
 }
+.container{
+    border: solid blue 5px;
+    border-radius: 10px;
+    margin:5px;
+    padding: 10px;
+}
 .color-blue{
     color: blue;
 }
