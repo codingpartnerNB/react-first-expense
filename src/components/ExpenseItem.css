@@ -11,3 +11,11 @@
 .color-blue{
     color: blue;
 }
+
+#delBtn{
+    background-color: blue;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 10px auto;
+    cursor: pointer;
+}
