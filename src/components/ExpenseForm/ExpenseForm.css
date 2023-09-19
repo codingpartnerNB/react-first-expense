@@ -1,0 +1,49 @@
+.new-expense{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    border: 5px solid blue;
+    background-color: cyan;
+    margin: 8px auto;
+    padding: 10px 30px;
+    border-radius: 10px;
+    height: 30vh;
+    width: 60vw;
+}
+
+.expense-control{
+    padding: 10px;
+}
+
+.expense-control label{
+    color: blue;
+    font-size: 18px;
+    margin: auto 8px;
+    font-weight: 800;
+}
+
+.expense-control input{
+    border-radius: 5px;
+    width: 50%;
+    border: 1px solid white;
+    background-color: white;
+    max-width: 100%;
+    margin-left: 10%;
+}
+
+.exp-btn{
+    text-align: right;
+}
+
+.expense-btn{
+    background-color: blue;
+    border: 1px solid blue;
+    color: pink;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 5px;
+    margin: auto 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
