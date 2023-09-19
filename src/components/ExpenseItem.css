@@ -1,22 +1,37 @@
-*{
-    background-color: cyan;
-    color: white;
-}
+
 .container{
     border: solid blue 5px;
     border-radius: 10px;
-    margin:5px;
-    padding: 10px;
+    margin:5px auto;
+    padding: 10px 30px;
+    background-color: cyan;
+    color:darkslategray;
+    font-weight: 500;
+    width: 60vw;
+    height: auto;
 }
 .color-blue{
     color: blue;
 }
 
+.detail{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
 .btn{
     background-color: blue;
+    border: 1px solid blue;
+    color: pink;
+    font-weight: 600;
     padding: 8px;
     border-radius: 5px;
     margin: 10px auto;
     cursor: pointer;
-    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.button{
+    text-align: right;
 }

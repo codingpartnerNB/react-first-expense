@@ -1,0 +1,11 @@
+.expense-data{
+    padding: 5px;
+}
+
+.expense-location{
+    padding: 5px;
+}
+
+.amount{
+    color: red;
+}
