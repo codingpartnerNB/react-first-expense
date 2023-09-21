@@ -1,25 +1,28 @@
+import React, {useState} from 'react';
 import './App.css';
 import ExpenseItem from './components/ExpenseItem';
 import NewExpense from './components/ExpenseForm/NewExpense';
 
 const App = () => {
-  const expenses = [{
-    title:"Food",
-    amount:10,
-    date:new Date()
-  },{
-    title:"Petrol",
-    amount:100,
-    date:new Date()
-  },{
-    title:"Movies",
-    amount:200,
-    date:new Date()
-  }];
+  // const expenses = [{
+  //   title:"Food",
+  //   amount:10,
+  //   date:new Date()
+  // },{
+  //   title:"Petrol",
+  //   amount:100,
+  //   date:new Date()
+  // },{
+  //   title:"Movies",
+  //   amount:200,
+  //   date:new Date()
+  // }];
+
+  const [expenses, setExpenses] = useState([]);
   const LocationOfExpenditure = "Delhi";
 
   const addExpenseHandler = (expense)=>{
-    console.log(expense);
+    setExpenses([{...expense}]);
   }
   return (
     <div>
