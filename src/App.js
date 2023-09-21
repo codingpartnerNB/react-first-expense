@@ -1,6 +1,6 @@
 import './App.css';
 import ExpenseItem from './components/ExpenseItem';
-import ExpenseForm from "./components/ExpenseForm/ExpenseForm";
+import NewExpense from './components/ExpenseForm/NewExpense';
 
 const App = () => {
   const expenses = [{
@@ -17,9 +17,13 @@ const App = () => {
     date:new Date()
   }];
   const LocationOfExpenditure = "Delhi";
+
+  const addExpenseHandler = (expense)=>{
+    console.log(expense);
+  }
   return (
     <div>
-      <ExpenseForm />
+      <NewExpense onAddExpense={addExpenseHandler} />
       {
         expenses.map((item)=>{
         return <ExpenseItem title={item.title} amount={item.amount} date={item.date} locationForExpense={LocationOfExpenditure}></ExpenseItem>
