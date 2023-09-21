@@ -1,0 +1,28 @@
+.filter-main{
+    background-color: cyan;
+    border: 5px solid blue;
+    border-radius: 10px;
+    margin: 5px auto;
+    width: 60vw;
+    padding: 10px 30px;
+    height: auto;
+    font-weight: 500;
+    text-align: right;
+}
+
+.filter-main label{
+    color: blue;
+    margin-right: 10px;
+}
+
+.filter-main select{
+    border-radius: 10px;
+    border: 3px solid blue;
+    width: 15%;
+}
+
+@media only screen and (max-width:900px) {
+    .filter-main select{
+        width:30%;
+    }
+}
