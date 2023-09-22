@@ -1,0 +1,24 @@
+.btn-control{
+    background-color: cyan;
+    border: 5px solid blue;
+    border-radius: 10px;
+    width: 60vw;
+    padding: 25px 30px;
+    height: auto;
+    margin: 5px auto;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn{
+    background-color: blue;
+    border: 1px solid blue;
+    color: pink;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 5px;
+    margin: auto 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
