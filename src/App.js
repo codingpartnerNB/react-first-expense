@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import './App.css';
-import ExpensesList from './components/ExpenseItemDetails/ExpensesList';
+import ExpensesList from './components/ExpenseDetails/ExpensesList';
 import NewExpense from './components/ExpenseForm/NewExpense';
-import ExpenseFilter from './components/ExpenseItemDetails/ExpenseFilter';
+import ExpenseFilter from './components/ExpenseDetails/ExpenseFilter';
+import ExpensesChart from './components/ExpenseDetails/ExpensesChart';
 
 const DUMMY_EXPENSES = [{
   id:"e1",
@@ -43,6 +44,7 @@ const App = () => {
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
       <ExpenseFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
+      <ExpensesChart expenses={filteredExpenses} />
       <ExpensesList expenses={filteredExpenses} locationForExpense={LocationOfExpenditure} />
     </div>
   );
