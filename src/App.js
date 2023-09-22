@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import ExpenseItem from './components/ExpenseItem';
+import ExpensesList from './components/ExpenseItemDetails/ExpensesList';
 import NewExpense from './components/ExpenseForm/NewExpense';
 import ExpenseFilter from './components/ExpenseItemDetails/ExpenseFilter';
 
@@ -43,14 +43,7 @@ const App = () => {
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
       <ExpenseFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
-      {
-        filteredExpenses.length === 0 && (<h2 style={{textAlign:"center", color:"white"}}>No expenses found</h2>)
-      }
-      {
-        filteredExpenses.length > 0 && (filteredExpenses.map((item)=>{
-          return <ExpenseItem key={item.id} title={item.title} amount={item.amount} date={item.date} locationForExpense={LocationOfExpenditure}></ExpenseItem>
-          }))
-      }
+      <ExpensesList expenses={filteredExpenses} locationForExpense={LocationOfExpenditure} />
     </div>
   );
 }
